@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NimbusCalc Guides | Free Calculator Tutorials & Health Tips</title>
+    <meta name="description" content="Learn how to use BMI, calorie, loan calculators effectively. Understand your health metrics and make informed financial decisions with our step-by-step guides.">
+    <meta name="keywords" content="BMI guide, calorie calculator tutorial, loan calculator help, health tips, financial literacy">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nimbuscalc-guides.onrender.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fffaf5;
+            color: #2d2a24;
+            line-height: 1.5;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .header {
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            font-size: 1.8rem;
+            color: #f59e0b;
+        }
+        .logo-text {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d2a24;
+        }
+        .nav-links a {
+            margin-left: 28px;
+            text-decoration: none;
+            color: #6b5a4e;
+            font-weight: 500;
+        }
+        .nav-links a:hover { color: #f59e0b; }
+        .btn-primary {
+            background: #f59e0b;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .btn-primary:hover { background: #e67e22; }
+        .hero {
+            text-align: center;
+            padding: 60px 0 40px;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #f59e0b, #e67e22);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 32px;
+            font-size: 1.2rem;
+            color: #6b5a4e;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-header h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 28px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-4px); }
+        .card-icon {
+            font-size: 2rem;
+            color: #f59e0b;
+            margin-bottom: 16px;
+        }
+        .card h3 {
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+        .card p {
+            color: #6b5a4e;
+            margin-bottom: 20px;
+        }
+        .tool-list {
+            list-style: none;
+            margin-top: 16px;
+        }
+        .tool-list li {
+            margin-bottom: 8px;
+        }
+        .tool-list a {
+            color: #f59e0b;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .tool-list a:hover { text-decoration: underline; }
+        .inline-link {
+            color: #f59e0b;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .inline-link:hover { text-decoration: underline; }
+        .footer {
+            background: #2d2a24;
+            color: #e2e8f0;
+            padding: 48px 0 24px;
+            margin-top: 40px;
+        }
+        .footer a { color: #f59e0b; text-decoration: none; }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+        .footer-links ul { list-style: none; margin-top: 12px; }
+        .footer-links li { margin-bottom: 8px; }
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #4a4238;
+            padding-top: 24px;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <i class="fas fa-book-open logo-icon"></i>
+            <span class="logo-text">NimbusCalc Guides</span>
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/guides/bmi-guide.html">BMI Guide</a>
+            <a href="/guides/calorie-guide.html">Calorie Guide</a>
+            <a href="/guides/loan-guide.html">Loan Guide</a>
+            <a href="/health-tips/">Health Tips</a>
+            <a href="https://www.nimbuscalc.com/" target="_blank" class="btn-primary" style="padding: 8px 20px;">Main Site</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="hero">
+        <div class="container">
+            <h1>Free Calculator <span class="hero-gradient">Guides & Tips</span></h1>
+            <p>Understand your health and finances with our easy-to-follow tutorials. Learn how to use BMI, calorie, and loan calculators to make better decisions.</p>
+            <a href="#guides" class="btn-primary">Browse Guides →</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="guides" class="section">
+            <div class="section-header">
+                <h2>Popular Calculator Guides</h2>
+                <p>Step-by-step instructions, examples, and what the results mean for you</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <i class="fas fa-weight card-icon"></i>
+                    <h3>BMI Complete Guide</h3>
+                    <p>What is BMI? How to calculate it, interpret the results, and understand its limitations for different body types.</p>
+                    <ul class="tool-list">
+                        <li><a href="https://www.nimbuscalc.com/calculators/body-composition/bmi-calculator/" target="_blank">BMI Calculator →</a></li>
+                        <li><a href="https://www.nimbuscalc.com/calculators/body-composition/body-fat-calculator/" target="_blank">Body Fat Calculator →</a></li>
+                        <li><a href="https://www.nimbuscalc.com/calculators/body-composition/ideal-weight-calculator/" target="_blank">Ideal Weight Calculator →</a></li>
+                    </ul>
+                    <a href="/guides/bmi-guide.html" class="inline-link">Read full guide →</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-fire card-icon"></i>
+                    <h3>Calorie & TDEE Guide</h3>
+                    <p>Learn how to calculate your daily energy needs, set weight goals, and track macros effectively.</p>
+                    <ul class="tool-list">
+                        <li><a href="https://www.nimbuscalc.com/calculators/nutrition/calorie-calculator/" target="_blank">Calorie Calculator →</a></li>
+                        <li><a href="https://www.nimbuscalc.com/calculators/nutrition/bmr-calculator/" target="_blank">BMR Calculator →</a></li>
+                        <li><a href="https://www.nimbuscalc.com/calculators/nutrition/macro-calculator/" target="_blank">Macro Calculator →</a></li>
+                    </ul>
+                    <a href="/guides/calorie-guide.html" class="inline-link">Read full guide →</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-home card-icon"></i>
+                    <h3>Loan & Mortgage Guide</h3>
+                    <p>Understand interest rates, amortization, and how to compare loan offers before committing.</p>
+                    <ul class="tool-list">
+                        <li><a href="https://www.nimbuscalc.com/calculators/financial-calculators/auto-loan-calculator-tax-fees/" target="_blank">Auto Loan Calculator →</a></li>
+                        <li><a href="https://www.nimbuscalc.com/calculators/financial-calculators/mortgage-calculator/" target="_blank">Mortgage Calculator →</a></li>
+                        <li><a href="https://www.nimbuscalc.com/calculators/financial-calculators/retirement-calculator/" target="_blank">Retirement Calculator →</a></li>
+                    </ul>
+                    <a href="/guides/loan-guide.html" class="inline-link">Read full guide →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 新增：推荐工具区块 -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Top Recommended Tools</h2>
+                <p>Most used calculators on NimbusCalc</p>
+            </div>
+            <div class="grid-3">
+                <div class="card"><i class="fas fa-heartbeat card-icon"></i><h3>BMR Calculator</h3><p>Basal Metabolic Rate – calories burned at rest.</p><a href="https://www.nimbuscalc.com/calculators/nutrition/bmr-calculator/" target="_blank" class="inline-link">Try now →</a></div>
+                <div class="card"><i class="fas fa-percentage card-icon"></i><h3>Body Fat Calculator</h3><p>Estimate your body fat percentage (U.S. Navy method).</p><a href="https://www.nimbuscalc.com/calculators/body-composition/body-fat-calculator/" target="_blank" class="inline-link">Try now →</a></div>
+                <div class="card"><i class="fas fa-brain card-icon"></i><h3>IQ Test</h3><p>Measure your fluid intelligence.</p><a href="https://www.nimbuscalc.com/calculators/utilities/comprehensive-iq-test-official-free-premium-assessment/" target="_blank" class="inline-link">Try now →</a></div>
+                <div class="card"><i class="fas fa-car card-icon"></i><h3>Auto Loan Calculator</h3><p>With tax & fees – estimate monthly payments.</p><a href="https://www.nimbuscalc.com/calculators/financial-calculators/auto-loan-calculator-tax-fees/" target="_blank" class="inline-link">Try now →</a></div>
+                <div class="card"><i class="fas fa-baby card-icon"></i><h3>Due Date Calculator</h3><p>Estimate your baby's arrival.</p><a href="https://www.nimbuscalc.com/calculators/pregnancy-health/due-date-calculator/" target="_blank" class="inline-link">Try now →</a></div>
+                <div class="card"><i class="fas fa-water card-icon"></i><h3>Water Intake Calculator</h3><p>Daily hydration needs.</p><a href="https://www.nimbuscalc.com/calculators/nutrition/water-intake-calculator/" target="_blank" class="inline-link">Try now →</a></div>
+            </div>
+        </section>
+
+        <section class="section" style="background: #fff0e6; border-radius: 32px; padding: 48px;">
+            <div class="section-header">
+                <h2>Why Use NimbusCalc?</h2>
+                <p>Accurate, free, and easy — trusted by thousands daily</p>
+            </div>
+            <div class="grid-3">
+                <div class="card" style="background: white;"><i class="fas fa-chart-line card-icon"></i><h3>Instant Results</h3><p>Real-time calculations as you type. No page reloads.</p></div>
+                <div class="card" style="background: white;"><i class="fas fa-mobile-alt card-icon"></i><h3>Mobile Friendly</h3><p>Works perfectly on all devices, from phones to desktops.</p></div>
+                <div class="card" style="background: white;"><i class="fas fa-history card-icon"></i><h3>Save History</h3><p>Your recent calculations are stored locally for quick reference.</p></div>
+            </div>
+            <div style="text-align: center; margin-top: 32px;">
+                <a href="https://www.nimbuscalc.com/" target="_blank" class="btn-primary">Try All Calculators →</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2>Additional Resources</h2>
+                <p>Explore more tools and community projects</p>
+            </div>
+            <div class="grid-3">
+                <div class="card"><i class="fas fa-list-ul card-icon"></i><h3>All Categories</h3><p><a href="https://www.nimbuscalc.com/calculators/body-composition/" target="_blank" class="inline-link">Body Composition</a> · <a href="https://www.nimbuscalc.com/calculators/financial-calculators/" target="_blank" class="inline-link">Finance</a> · <a href="https://www.nimbuscalc.com/calculators/fitness/" target="_blank" class="inline-link">Fitness</a></p></div>
+                <div class="card"><i class="fab fa-github card-icon"></i><h3>Open Source Project</h3><a href="https://lyrasol.github.io/NimbusCalc/" target="_blank" class="inline-link">GitHub Pages →</a></div>
+                <div class="card"><i class="fas fa-cloud-upload-alt card-icon"></i><h3>Technical Docs</h3><a href="https://nimbuscalc.pages.dev/" target="_blank" class="inline-link">Cloudflare Mirror →</a></div>
+                <div class="card"><i class="fas fa-chart-simple card-icon"></i><h3>Performance Benchmarks</h3><a href="https://nimbuscalc-benchmark.vercel.app/" target="_blank" class="inline-link">Vercel Hub →</a></div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-links"><h4>Guides</h4><ul><li><a href="/guides/bmi-guide.html">BMI Guide</a></li><li><a href="/guides/calorie-guide.html">Calorie Guide</a></li><li><a href="/guides/loan-guide.html">Loan Guide</a></li></ul></div>
+            <div class="footer-links"><h4>Resources</h4><ul><li><a href="https://www.nimbuscalc.com/about/" target="_blank">About NimbusCalc</a></li><li><a href="https://www.nimbuscalc.com/contact/" target="_blank">Contact</a></li><li><a href="https://www.nimbuscalc.com/privacy/" target="_blank">Privacy Policy</a></li></ul></div>
+            <div class="footer-links"><h4>Community</h4><ul><li><a href="https://lyrasol.github.io/NimbusCalc/" target="_blank">GitHub Project</a></li><li><a href="https://nimbuscalc.pages.dev/" target="_blank">Cloudflare Mirror</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>© 2026 <a href="https://www.nimbuscalc.com" target="_blank">NimbusCalc</a> – Free Calculator Guides. All rights reserved.</p></div>
+    </div>
+</footer>
+
+</body>
+</html>
